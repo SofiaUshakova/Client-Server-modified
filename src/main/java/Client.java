@@ -27,6 +27,7 @@ public class Client {
             out.println(age);
 
             String serverResponse = in.readLine();
+            System.out.println(serverResponse);
 
         }
     }
