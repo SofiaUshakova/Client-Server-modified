@@ -15,13 +15,12 @@ public class Main {
                 {
                     System.out.printf("New connection accepted");
 
-                    Scanner sc = new Scanner(clientSocket.getInputStream());
-                    PrintWriter pw = new PrintWriter(clientSocket.getOutputStream());
+                    Scanner sc = new Scanner(System.in);
 
                     final String name = in.readLine();
                     final String age = in.readLine();
 
-                    if (age.equals("yes")) {
+                    if (age.equals("no")) {
                         out.println("Welcome to the adult zone, " + name + " Have a good rest, or a good working day!");
                     } else {
                         out.println("Welcome to the kids area, " + name + "! Let's play!");
